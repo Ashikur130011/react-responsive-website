@@ -5,11 +5,14 @@ import NotFound from './Components/NotFound/NotFound';
 import Booking from './Components/Booking/Booking/Booking';
 import Login from './Components/Login/Login/Login';
 import Header from './Components/Shared/Header/Header';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">
+      <AuthProvider>
       <Router>
         <Header></Header>
         <Switch>
@@ -22,15 +25,16 @@ function App() {
           <Route path="/login">
             <Login></Login>
           </Route>
-          <Route path="/booking/:serviceId">
+          <PrivateRoute path="/booking/:serviceId">
             <Booking></Booking>
-          </Route>
+          </PrivateRoute>
 
           <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
+      </AuthProvider>
       
     </div>
   );
