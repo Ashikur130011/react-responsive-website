@@ -14,22 +14,22 @@ const experts = [
     },
     {
         img: mechanic2,
-        name: 'Andrew Smith',
+        name: 'Andrew Smith1',
         expertise: '-Engine Expert'
     },
     {
         img: mechanic3,
-        name: 'Andrew Smith',
+        name: 'Andrew Smith2',
         expertise: '-Engine Expert'
     },
     {
         img: mechanic4,
-        name: 'Andrew Smith',
+        name: 'Andrew Smith3',
         expertise: '-Engine Expert'
     },
     {
         img: mechanic5,
-        name: 'Andrew Smith',
+        name: 'Andrew Smith4',
         expertise: '-Engine Expert'
     }
 ]
